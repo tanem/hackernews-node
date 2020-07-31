@@ -7,6 +7,10 @@
   "author": "Tane Morgan (https://github.com/tanem)",
   "bugs": "https://github.com/tanem/hackernews-node/issues",
   "homepage": "https://github.com/tanem/hackernews-node",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
@@ -19,6 +23,7 @@
   },
   "devDependencies": {
     "@prisma/cli": "2.0.0-beta.2",
-    "nodemon": "2.0.3"
+    "nodemon": "2.0.3",
+    "prettier": "2.0.5"
   }
 }

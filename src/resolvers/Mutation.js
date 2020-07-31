@@ -10,16 +10,18 @@ function post(parent, args, context, info) {
       url: args.url,
       description: args.description,
       postedBy: { connect: { id: userId } },
-    }
+    },
   })
-  context.pubsub.publish("NEW_LINK", newLink)
+  context.pubsub.publish('NEW_LINK', newLink)
 
   return newLink
 }
 
 async function signup(parent, args, context, info) {
   const password = await bcrypt.hash(args.password, 10)
-  const user = await context.prisma.user.create({ data: { ...args, password } })
+  const user = await context.prisma.user.create({
+    data: { ...args, password },
+  })
 
   const token = jwt.sign({ userId: user.id }, APP_SECRET)
 
@@ -30,7 +32,9 @@ async function signup(parent, args, context, info) {
 }
 
 async function login(parent, args, context, info) {
-  const user = await context.prisma.user.findOne({ where: { email: args.email } })
+  const user = await context.prisma.user.findOne({
+    where: { email: args.email },
+  })
   if (!user) {
     throw new Error('No such user found')
   }
@@ -54,9 +58,9 @@ async function vote(parent, args, context, info) {
     where: {
       linkId_userId: {
         linkId: Number(args.linkId),
-        userId: userId
-      }
-    }
+        userId: userId,
+      },
+    },
   })
 
   if (Boolean(vote)) {
@@ -67,9 +71,9 @@ async function vote(parent, args, context, info) {
     data: {
       user: { connect: { id: userId } },
       link: { connect: { id: Number(args.linkId) } },
-    }
+    },
   })
-  context.pubsub.publish("NEW_VOTE", newVote)
+  context.pubsub.publish('NEW_VOTE', newVote)
 
   return newVote
 }
