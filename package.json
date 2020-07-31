@@ -1,7 +1,12 @@
 {
   "name": "hackernews-node",
   "version": "1.0.0",
+  "description": "",
   "license": "MIT",
+  "repository": "github:tanem/hackernews-node",
+  "author": "Tane Morgan (https://github.com/tanem)",
+  "bugs": "https://github.com/tanem/hackernews-node/issues",
+  "homepage": "https://github.com/tanem/hackernews-node",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
