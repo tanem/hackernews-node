@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@prisma/cli": "2.4.1",
-    "chance": "1.1.6",
+    "chance": "1.1.7",
     "jest": "26.2.2",
     "nodemon": "2.0.4",
     "prettier": "2.0.5",
