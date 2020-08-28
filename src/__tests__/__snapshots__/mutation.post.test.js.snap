@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns error if not authenticated 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    Object {
+      "locations": Array [
+        Object {
+          "column": 9,
+          "line": 3,
+        },
+      ],
+      "message": "Not authenticated",
+      "path": Array [
+        "post",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`successful 1`] = `
+Object {
+  "data": Object {
+    "post": Object {
+      "description": "Lub op so rotizjod loh.",
+      "id": "1",
+      "postedBy": Object {
+        "id": "1",
+        "name": "Lois",
+      },
+      "url": "http://jur.om/va",
+      "votes": Array [],
+    },
+  },
+}
+`;

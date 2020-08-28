@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`signup 1`] = `
+Object {
+  "data": Object {
+    "signup": Object {
+      "token": Any<String>,
+      "user": Object {
+        "id": Any<String>,
+      },
+    },
+  },
+}
+`;

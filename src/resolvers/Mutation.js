@@ -35,6 +35,7 @@ async function login(parent, args, context, info) {
   const user = await context.prisma.user.findOne({
     where: { email: args.email },
   })
+
   if (!user) {
     throw new Error('No such user found')
   }
@@ -67,7 +68,7 @@ async function vote(parent, args, context, info) {
     throw new Error(`Already voted for link: ${args.linkId}`)
   }
 
-  const newVote = context.prisma.vote.create({
+  const newVote = await context.prisma.vote.create({
     data: {
       user: { connect: { id: userId } },
       link: { connect: { id: Number(args.linkId) } },

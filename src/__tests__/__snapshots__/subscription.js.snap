@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`new link 1`] = `
+Object {
+  "newLink": Object {
+    "description": "Linbuam muzaven kagjo ducwofve kef.",
+    "id": "2",
+    "postedBy": Object {
+      "id": "1",
+      "name": "Louis",
+    },
+    "url": "http://duzirune.tt/nitel",
+  },
+}
+`;
+
+exports[`new vote 1`] = `
+Object {
+  "newVote": Object {
+    "id": "1",
+    "link": Object {
+      "description": "Ek gi ajecob malop oconno.",
+      "url": "http://kik.cl/obiguwwo",
+    },
+    "user": Object {
+      "email": "pomzipov@liru.cd",
+      "name": "Louis",
+    },
+  },
+}
+`;

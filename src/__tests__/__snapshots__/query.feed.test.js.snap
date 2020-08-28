@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filter 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 2,
+      "links": Array [
+        Object {
+          "description": "Vehis gupjunomo tafkizhib kifka vurme.",
+          "id": "1",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://digikul.dj/fof",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Sapuja bit aveanahar wobibimo wis.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://gepinu.ug/bodzud",
+          "votes": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`pagination 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Sapuja bit aveanahar wobibimo wis.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://gepinu.ug/bodzud",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Bewo dakoslih da ih gid.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://lipbirgu.sy/ija",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Nab ruun mu suolpih dutied.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://jehne.kz/zenok",
+          "votes": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`simple 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Vehis gupjunomo tafkizhib kifka vurme.",
+          "id": "1",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://digikul.dj/fof",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Sapuja bit aveanahar wobibimo wis.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://gepinu.ug/bodzud",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Bewo dakoslih da ih gid.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://lipbirgu.sy/ija",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Nab ruun mu suolpih dutied.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://jehne.kz/zenok",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Mer tewozme pug luz lesset.",
+          "id": "5",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://nifoh.ee/ku",
+          "votes": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`sorting 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Bewo dakoslih da ih gid.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://lipbirgu.sy/ija",
+        },
+        Object {
+          "description": "Mer tewozme pug luz lesset.",
+          "id": "5",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://nifoh.ee/ku",
+        },
+        Object {
+          "description": "Nab ruun mu suolpih dutied.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://jehne.kz/zenok",
+        },
+        Object {
+          "description": "Sapuja bit aveanahar wobibimo wis.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://gepinu.ug/bodzud",
+        },
+        Object {
+          "description": "Vehis gupjunomo tafkizhib kifka vurme.",
+          "id": "1",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Essie",
+          },
+          "url": "http://digikul.dj/fof",
+        },
+      ],
+    },
+  },
+}
+`;

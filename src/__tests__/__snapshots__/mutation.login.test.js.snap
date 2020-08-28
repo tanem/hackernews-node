@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`invalid password 1`] = `
+Object {
+  "data": Object {
+    "login": null,
+  },
+  "errors": Array [
+    Object {
+      "locations": Array [
+        Object {
+          "column": 9,
+          "line": 3,
+        },
+      ],
+      "message": "Invalid password",
+      "path": Array [
+        "login",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`successful login 1`] = `
+Object {
+  "data": Object {
+    "login": Object {
+      "token": Any<String>,
+      "user": Object {
+        "email": "segerrid@oznel.nf",
+        "links": Array [],
+      },
+    },
+  },
+}
+`;
+
+exports[`user not found 1`] = `
+Object {
+  "data": Object {
+    "login": null,
+  },
+  "errors": Array [
+    Object {
+      "locations": Array [
+        Object {
+          "column": 9,
+          "line": 3,
+        },
+      ],
+      "message": "No such user found",
+      "path": Array [
+        "login",
+      ],
+    },
+  ],
+}
+`;
