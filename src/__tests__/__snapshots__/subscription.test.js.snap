@@ -3,13 +3,13 @@
 exports[`new link 1`] = `
 Object {
   "newLink": Object {
-    "description": "Linbuam muzaven kagjo ducwofve kef.",
+    "description": "Velaz fo soevu we du.",
     "id": "2",
     "postedBy": Object {
       "id": "1",
-      "name": "Louis",
+      "name": "Mildred",
     },
-    "url": "http://duzirune.tt/nitel",
+    "url": "http://lah.cm/casa",
   },
 }
 `;
@@ -19,12 +19,12 @@ Object {
   "newVote": Object {
     "id": "1",
     "link": Object {
-      "description": "Ek gi ajecob malop oconno.",
-      "url": "http://kik.cl/obiguwwo",
+      "description": "Niwobma sipjatgad pawwopda gu sa.",
+      "url": "http://lur.sg/mez",
     },
     "user": Object {
-      "email": "pomzipov@liru.cd",
-      "name": "Louis",
+      "email": "behrueri@zu.uk",
+      "name": "Mildred",
     },
   },
 }
