@@ -10,12 +10,10 @@ beforeAll(async () => {
   global.__PRISMA__ = prisma
 })
 
-beforeEach(async () => {
-  // Clean the DB prior to running a test. To ensure this always occurs before
-  // the next test executes, we use Jest's `--runInBand` option.
-  await truncateTestDB()
-})
-
 afterAll(async () => {
   await stopServer()
+})
+
+afterEach(async () => {
+  await truncateTestDB()
 })
