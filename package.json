@@ -19,13 +19,13 @@
     "test:coverage": "npm run test -- --coverage"
   },
   "dependencies": {
-    "@prisma/client": "2.4.1",
+    "@prisma/client": "2.5.1",
     "bcryptjs": "2.4.3",
     "graphql-yoga": "1.18.3",
     "jsonwebtoken": "8.5.1"
   },
   "devDependencies": {
-    "@prisma/cli": "2.4.1",
+    "@prisma/cli": "2.5.1",
     "chance": "1.1.7",
     "cross-env": "7.0.2",
     "jest": "26.4.2",
