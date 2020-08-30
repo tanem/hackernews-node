@@ -14,9 +14,9 @@
   "scripts": {
     "start": "cross-env DATABASE_URL=file:./dev.db node src/start.js",
     "dev": "cross-env DATABASE_URL=file:./dev.db nodemon src/start.js",
-    "test": "cross-env DATABASE_URL=file:./test.db jest --runInBand",
-    "test:watch": "npm run test -- --watch",
-    "test:coverage": "npm run test -- --coverage"
+    "test": "cross-env-shell DATABASE_URL=file:./test.db \"prisma migrate up -c --experimental && jest -i\"",
+    "test:watch": "npm t -- --watchAll",
+    "test:coverage": "npm t -- --coverage"
   },
   "dependencies": {
     "@prisma/client": "2.5.1",
