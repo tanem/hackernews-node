@@ -1,4 +1,4 @@
-const truncateTestDB = require('../prisma/truncate-test-db')
+const { truncate } = require('../prisma/truncate')
 const { prisma } = require('../prisma/client')
 const { start: startServer } = require('../src/server')
 const { stop: stopServer } = require('../src/server')
@@ -15,5 +15,5 @@ afterAll(async () => {
 })
 
 afterEach(async () => {
-  await truncateTestDB()
+  await truncate('test')
 })

@@ -2,9 +2,9 @@ const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient()
 
-module.exports = async () => {
+exports.truncate = async (dbName) => {
   try {
-    const query = `SELECT name FROM test.sqlite_master WHERE type = "table";`
+    const query = `SELECT name FROM ${dbName}.sqlite_master WHERE type = "table";`
     const rawTables = await prisma.$queryRaw(query)
 
     await Promise.all(
