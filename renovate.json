@@ -9,7 +9,6 @@
     "enabled": true
   },
   "node": {
-    "enabled": true,
     "supportPolicy": ["lts_latest"]
   },
   "prCreation": "not-pending",
