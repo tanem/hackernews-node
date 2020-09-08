@@ -3,7 +3,8 @@
     "config:js-app",
     ":rebaseStalePrs",
     ":automergeAll",
-    ":masterIssue"
+    ":masterIssue",
+    ":enableVulnerabilityAlerts"
   ],
   "lockFileMaintenance": {
     "enabled": true
