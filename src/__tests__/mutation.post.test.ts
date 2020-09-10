@@ -1,13 +1,15 @@
-const path = require('path')
-const bcrypt = require('bcryptjs')
-const chance = require('chance').Chance(path.basename(__filename))
-const jwt = require('jsonwebtoken')
-const { APP_SECRET } = require('../utils')
-const request = require('supertest')
+import bcrypt from 'bcryptjs'
+import Chance from 'chance'
+import jwt from 'jsonwebtoken'
+import path from 'path'
+import request from 'supertest'
+import { APP_SECRET } from '../utils'
 
-let httpServerUrl
-let prisma
-let token
+const chance = Chance(path.basename(__filename))
+
+let httpServerUrl: typeof global.__HTTP_SERVER_URL__
+let prisma: typeof global.__PRISMA__
+let token: string
 
 beforeAll(async () => {
   httpServerUrl = global.__HTTP_SERVER_URL__

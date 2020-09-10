@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filter 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 0,
+      "links": Array [],
+    },
+  },
+}
+`;
+
+exports[`pagination 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Fef no gocinfan fe gu.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://dum.dj/tofej",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Jutezuj ce ova wozo tim.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://ife.fr/rogeuco",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Sa uvian ed laurapu re.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://zobekdiv.sg/soki",
+          "votes": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`simple 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Fano ki wetu lehmuh razi.",
+          "id": "1",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://bizbah.yt/mag",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Fef no gocinfan fe gu.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://dum.dj/tofej",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Jutezuj ce ova wozo tim.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://ife.fr/rogeuco",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Sa uvian ed laurapu re.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://zobekdiv.sg/soki",
+          "votes": Array [],
+        },
+        Object {
+          "description": "Useri rorur piz ruefuaj hebak.",
+          "id": "5",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://hasme.mm/bubtocfab",
+          "votes": Array [],
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`sorting 1`] = `
+Object {
+  "data": Object {
+    "feed": Object {
+      "count": 5,
+      "links": Array [
+        Object {
+          "description": "Fano ki wetu lehmuh razi.",
+          "id": "1",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://bizbah.yt/mag",
+        },
+        Object {
+          "description": "Fef no gocinfan fe gu.",
+          "id": "2",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://dum.dj/tofej",
+        },
+        Object {
+          "description": "Jutezuj ce ova wozo tim.",
+          "id": "3",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://ife.fr/rogeuco",
+        },
+        Object {
+          "description": "Sa uvian ed laurapu re.",
+          "id": "4",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://zobekdiv.sg/soki",
+        },
+        Object {
+          "description": "Useri rorur piz ruefuaj hebak.",
+          "id": "5",
+          "postedBy": Object {
+            "id": "1",
+            "name": "Johnny",
+          },
+          "url": "http://hasme.mm/bubtocfab",
+        },
+      ],
+    },
+  },
+}
+`;

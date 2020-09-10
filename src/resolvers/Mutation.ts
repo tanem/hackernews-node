@@ -1,8 +1,8 @@
-const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
-const { APP_SECRET, getUserId } = require('../utils')
+import bcrypt from 'bcryptjs'
+import jwt from 'jsonwebtoken'
+import { APP_SECRET, getUserId } from '../utils'
 
-function post(parent, args, context, info) {
+export const post = (parent, args, context, info) => {
   const userId = getUserId(context)
 
   const newLink = context.prisma.link.create({
@@ -17,7 +17,7 @@ function post(parent, args, context, info) {
   return newLink
 }
 
-async function signup(parent, args, context, info) {
+export const signup = async (parent, args, context, info) => {
   const password = await bcrypt.hash(args.password, 10)
   const user = await context.prisma.user.create({
     data: { ...args, password },
@@ -31,7 +31,7 @@ async function signup(parent, args, context, info) {
   }
 }
 
-async function login(parent, args, context, info) {
+export const login = async (parent, args, context, info) => {
   const user = await context.prisma.user.findOne({
     where: { email: args.email },
   })
@@ -53,7 +53,7 @@ async function login(parent, args, context, info) {
   }
 }
 
-async function vote(parent, args, context, info) {
+export const vote = async (parent, args, context, info) => {
   const userId = getUserId(context)
   const vote = await context.prisma.vote.findOne({
     where: {
@@ -77,11 +77,4 @@ async function vote(parent, args, context, info) {
   context.pubsub.publish('NEW_VOTE', newVote)
 
   return newVote
-}
-
-module.exports = {
-  post,
-  signup,
-  login,
-  vote,
 }

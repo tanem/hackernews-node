@@ -28,6 +28,12 @@
   },
   "devDependencies": {
     "@prisma/cli": "2.6.2",
+    "@types/bcryptjs": "2.4.2",
+    "@types/chance": "1.1.0",
+    "@types/jest": "26.0.13",
+    "@types/jsonwebtoken": "8.5.0",
+    "@types/node": "14.10.0",
+    "@types/supertest": "2.0.10",
     "chance": "1.1.7",
     "cross-env": "7.0.2",
     "jest": "26.4.2",
@@ -35,6 +41,7 @@
     "prettier": "2.1.1",
     "subscriptions-transport-ws": "0.9.18",
     "supertest": "4.0.2",
+    "ts-jest": "26.3.0",
     "typescript": "4.0.2"
   },
   "jest": {
@@ -42,8 +49,9 @@
       "src/**/*.js",
       "!src/start.js"
     ],
+    "preset": "ts-jest",
     "setupFilesAfterEnv": [
-      "<rootDir>/test-support/setup-tests.js"
+      "<rootDir>/test-support/setup-tests.ts"
     ]
   }
 }

@@ -1,4 +1,4 @@
-async function feed(parent, args, context, info) {
+export const feed = async (_source, args, context, _info) => {
   const where = args.filter
     ? {
         OR: [
@@ -21,8 +21,4 @@ async function feed(parent, args, context, info) {
     links,
     count,
   }
-}
-
-module.exports = {
-  feed,
 }
