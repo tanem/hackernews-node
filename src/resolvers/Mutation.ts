@@ -1,8 +1,13 @@
+import { Link, User, Vote } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import { Context } from '../context'
 import { APP_SECRET, getUserId } from '../utils'
 
-export const post = (parent, args, context, info) => {
+type Args = {
+  url: string
+}
+export const post = (_parent: unknown, args: Link, context: Context) => {
   const userId = getUserId(context)
 
   const newLink = context.prisma.link.create({
@@ -17,7 +22,11 @@ export const post = (parent, args, context, info) => {
   return newLink
 }
 
-export const signup = async (parent, args, context, info) => {
+export const signup = async (
+  _parent: unknown,
+  args: User,
+  context: Context
+) => {
   const password = await bcrypt.hash(args.password, 10)
   const user = await context.prisma.user.create({
     data: { ...args, password },
@@ -31,7 +40,7 @@ export const signup = async (parent, args, context, info) => {
   }
 }
 
-export const login = async (parent, args, context, info) => {
+export const login = async (_parent: unknown, args: User, context: Context) => {
   const user = await context.prisma.user.findOne({
     where: { email: args.email },
   })
@@ -53,7 +62,7 @@ export const login = async (parent, args, context, info) => {
   }
 }
 
-export const vote = async (parent, args, context, info) => {
+export const vote = async (_parent: unknown, args: Vote, context: Context) => {
   const userId = getUserId(context)
   const vote = await context.prisma.vote.findOne({
     where: {

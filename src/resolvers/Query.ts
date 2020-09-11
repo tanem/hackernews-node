@@ -1,4 +1,16 @@
-export const feed = async (_source, args, context, _info) => {
+import { LinkOrderByInput } from '@prisma/client'
+import { Context } from '../context'
+
+export const feed = async (
+  _parent: unknown,
+  args: {
+    filter: string
+    orderBy: LinkOrderByInput
+    skip: number
+    take: number
+  },
+  context: Context
+) => {
   const where = args.filter
     ? {
         OR: [

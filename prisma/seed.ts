@@ -2,7 +2,7 @@ import { Link, LinkCreateInput, User, UserCreateInput } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 import Chance from 'chance'
 import path from 'path'
-import { prisma } from '../prisma/client'
+import { prisma } from './client'
 
 const chance = Chance(path.basename(__filename))
 

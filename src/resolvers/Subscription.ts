@@ -1,11 +1,14 @@
+import { Link, Vote } from '@prisma/client'
+import { Context } from '../context'
+
 export const newLink = {
-  subscribe: (_parent, _args, context) =>
+  subscribe: (_parent: unknown, _args: unknown, context: Context) =>
     context.pubsub.asyncIterator('NEW_LINK'),
-  resolve: (payload) => payload,
+  resolve: (payload: Link) => payload,
 }
 
 export const newVote = {
-  subscribe: (_parent, _args, context) =>
+  subscribe: (_parent: unknown, _args: unknown, context: Context) =>
     context.pubsub.asyncIterator('NEW_VOTE'),
-  resolve: (payload) => payload,
+  resolve: (payload: Vote) => payload,
 }

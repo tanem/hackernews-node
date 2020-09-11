@@ -3,8 +3,8 @@
     "esModuleInterop": true,
     "lib": ["esnext"],
     "outDir": "dist",
-    "sourceMap": true
-    // "strict": true
+    "sourceMap": true,
+    "strict": true
   },
   "include": ["prisma/client.ts", "src/**/*"],
   "exclude": ["src/__tests__/**/*"]
