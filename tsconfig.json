@@ -1,9 +1,5 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "lib": ["esnext"],
-    "outDir": "dist",
-    "sourceMap": true
-    // "strict": true
-  }
+  "extends": "./tsconfig.base.json",
+  "include": ["prisma/**/*", "src/**/*", "test-support/**/*"],
+  "exclude": []
 }

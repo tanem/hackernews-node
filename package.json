@@ -12,13 +12,15 @@
     "singleQuote": true
   },
   "scripts": {
-    "start": "cross-env DATABASE_URL=file:./dev.db node src/start.js",
-    "dev": "cross-env-shell DATABASE_URL=file:./dev.db nodemon src/start.js",
+    "build": "npm run clean && npm run generate && tsc -p tsconfig.base.json",
+    "clean": "rm -rf dist",
+    "dev": "cross-env DATABASE_URL=file:./dev.db ts-node-dev --no-notify --respawn --transpile-only src/start.ts",
+    "generate": "prisma generate",
     "migrate": "prisma migrate up -c --experimental",
-    "seed": "cross-env-shell DATABASE_URL=file:./dev.db node prisma/seed.js",
+    "start": "cross-env DATABASE_URL=file:./dev.db node dist/src/start",
     "test": "cross-env-shell DATABASE_URL=file:./test.db \"npm run migrate && jest -i\"",
-    "test:watch": "npm t -- --watchAll",
-    "test:coverage": "npm t -- --coverage"
+    "test:coverage": "npm t -- --coverage",
+    "test:watch": "npm t -- --watchAll"
   },
   "dependencies": {
     "@prisma/client": "2.6.2",
@@ -42,6 +44,8 @@
     "subscriptions-transport-ws": "0.9.18",
     "supertest": "4.0.2",
     "ts-jest": "26.3.0",
+    "ts-node": "9.0.0",
+    "ts-node-dev": "1.0.0-pre.62",
     "typescript": "4.0.2"
   },
   "jest": {
