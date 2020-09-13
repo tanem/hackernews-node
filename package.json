@@ -17,7 +17,7 @@
     "dev": "cross-env DATABASE_URL=file:./dev.db ts-node-dev --no-notify --respawn --transpile-only src/start.ts",
     "generate": "prisma generate",
     "migrate": "prisma migrate up -c --experimental",
-    "start": "cross-env DATABASE_URL=file:./dev.db node dist/src/start",
+    "start": "node dist/src/start",
     "test": "cross-env-shell DATABASE_URL=file:./test.db \"npm run migrate && jest -i\"",
     "test:coverage": "npm t -- --coverage",
     "test:watch": "npm t -- --watchAll"
