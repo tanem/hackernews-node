@@ -3,13 +3,13 @@
 exports[`new link 1`] = `
 Object {
   "newLink": Object {
-    "description": "Velaz fo soevu we du.",
+    "description": "Pevva haekaop lo be mi.",
     "id": "2",
     "postedBy": Object {
       "id": "1",
-      "name": "Mildred",
+      "name": "Leo",
     },
-    "url": "http://lah.cm/casa",
+    "url": "http://zukame.az/folpodni",
   },
 }
 `;
@@ -19,12 +19,12 @@ Object {
   "newVote": Object {
     "id": "1",
     "link": Object {
-      "description": "Niwobma sipjatgad pawwopda gu sa.",
-      "url": "http://lur.sg/mez",
+      "description": "Og ah nesriaco ge aziaw.",
+      "url": "http://fopone.ai/pibene",
     },
     "user": Object {
-      "email": "behrueri@zu.uk",
-      "name": "Mildred",
+      "email": "jappadoh@jub.mm",
+      "name": "Leo",
     },
   },
 }

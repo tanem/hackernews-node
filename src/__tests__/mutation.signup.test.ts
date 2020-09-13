@@ -1,8 +1,10 @@
-const path = require('path')
-const chance = require('chance').Chance(path.basename(__filename))
-const request = require('supertest')
+import Chance from 'chance'
+import path from 'path'
+import request from 'supertest'
 
-let httpServerUrl
+const chance = Chance(path.basename(__filename))
+
+let httpServerUrl: typeof global.__HTTP_SERVER_URL__
 
 beforeAll(() => {
   httpServerUrl = global.__HTTP_SERVER_URL__

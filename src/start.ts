@@ -1,4 +1,4 @@
-const start = require('./server').start
+import { start } from './server'
 
 ;(async () => {
   const { httpServerUrl } = await start()

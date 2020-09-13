@@ -41,7 +41,11 @@ Start the server:
 $ npm run start
 ```
 
-Point a browser at [http://localhost:4000](http://localhost:4000) to explore the GraphQL API in a [GraphQL Playground](https://github.com/prisma/graphql-playground). The app uses a SQLite database, [`./prisma/dev.db`](./prisma/dev.db), seeded with some dummy data.
+Point a browser at [http://localhost:4000](http://localhost:4000) to explore the GraphQL API in a [GraphQL Playground](https://github.com/prisma/graphql-playground). The app uses a SQLite database, [`./prisma/dev.db`](./prisma/dev.db), which was created and seeded with dummy data as follows:
+
+```
+$ npx cross-env-shell DATABASE_URL=file:./dev.db "npm run migrate && ts-node prisma/seed.ts"
+```
 
 ## Using the GraphQL API
 

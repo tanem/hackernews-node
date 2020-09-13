@@ -1,10 +1,12 @@
-const path = require('path')
-const bcrypt = require('bcryptjs')
-const chance = require('chance').Chance(path.basename(__filename))
-const request = require('supertest')
+import bcrypt from 'bcryptjs'
+import Chance from 'chance'
+import path from 'path'
+import request from 'supertest'
 
-let httpServerUrl
-let prisma
+const chance = Chance(path.basename(__filename))
+
+let httpServerUrl: typeof global.__HTTP_SERVER_URL__
+let prisma: typeof global.__PRISMA__
 
 beforeAll(async () => {
   httpServerUrl = global.__HTTP_SERVER_URL__
@@ -14,7 +16,7 @@ beforeAll(async () => {
 const name = chance.first()
 const email = chance.email()
 const password = chance.word()
-const links = new Array(5).fill().map(() => ({
+const links = new Array(5).fill(undefined).map(() => ({
   description: chance.sentence({ words: 5 }),
   url: chance.url(),
 }))

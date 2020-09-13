@@ -1,9 +1,16 @@
-const { prisma } = require('../prisma/client')
-const path = require('path')
-const chance = require('chance').Chance(path.basename(__filename))
-const bcrypt = require('bcryptjs')
+import { Link, LinkCreateInput, User, UserCreateInput } from '@prisma/client'
+import bcrypt from 'bcryptjs'
+import Chance from 'chance'
+import path from 'path'
+import { prisma } from './client'
 
-const createUser = ({ name, email, password }) =>
+const chance = Chance(path.basename(__filename))
+
+const createUser = ({
+  name,
+  email,
+  password,
+}: Pick<UserCreateInput, 'name' | 'email' | 'password'>) =>
   prisma.user.create({
     data: {
       name,
@@ -12,7 +19,11 @@ const createUser = ({ name, email, password }) =>
     },
   })
 
-const createLink = ({ description, url, userId }) =>
+const createLink = ({
+  description,
+  url,
+  userId,
+}: Pick<LinkCreateInput, 'description' | 'url'> & { userId: User['id'] }) =>
   prisma.link.create({
     data: {
       description,
@@ -23,7 +34,13 @@ const createLink = ({ description, url, userId }) =>
     },
   })
 
-const createVote = ({ linkId, userId }) =>
+const createVote = ({
+  linkId,
+  userId,
+}: {
+  linkId: Link['id']
+  userId: User['id']
+}) =>
   prisma.vote.create({
     data: {
       link: {
@@ -38,7 +55,7 @@ const createVote = ({ linkId, userId }) =>
 ;(async () => {
   try {
     let users = []
-    for (const _value of new Array(2).fill()) {
+    for (const _value of new Array(2).fill(undefined)) {
       const user = await createUser({
         name: chance.first(),
         email: chance.email(),
@@ -49,7 +66,7 @@ const createVote = ({ linkId, userId }) =>
 
     let links = []
     for (const user of users) {
-      for (const _value of new Array(2).fill()) {
+      for (const _value of new Array(2).fill(undefined)) {
         const link = await createLink({
           description: chance.sentence({ words: 5 }),
           url: chance.url(),
