@@ -27,7 +27,7 @@ const server = new GraphQLServer({
 let httpServer: HttpServer
 
 export const start = async () => {
-  httpServer = await server.start()
+  httpServer = await server.start({ port: process.env.PORT ?? 4000 })
   return {
     httpServerUrl: `http://localhost:${
       (httpServer.address() as AddressInfo).port
