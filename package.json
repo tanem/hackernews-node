@@ -51,8 +51,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/start.js"
+      "src/**/*.ts",
+      "!src/start.ts"
     ],
     "preset": "ts-jest",
     "setupFilesAfterEnv": [
