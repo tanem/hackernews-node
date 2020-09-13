@@ -1,2 +1,2 @@
-release: npm run build
+release: npx prisma version
 web: npm run start
