@@ -38,7 +38,7 @@ $ npm install
 Start the server:
 
 ```
-$ npm run start
+$ npm run dev
 ```
 
 Point a browser at [http://localhost:4000](http://localhost:4000) to explore the GraphQL API in a [GraphQL Playground](https://github.com/prisma/graphql-playground). The app uses a SQLite database, [`./prisma/dev.db`](./prisma/dev.db), which was created and seeded with dummy data as follows:
@@ -85,9 +85,7 @@ query {
 </details>
 
 <details>
-<summary>
-Search for links whose description or url contains a filter string
-</summary>
+<summary>Search for links whose description or url contains a filter string</summary>
 <p>
 
 ```graphql
@@ -118,9 +116,7 @@ query {
 </details>
 
 <details>
-<summary>
-Paginate the links query using offset pagination
-</summary>
+<summary>Paginate the links query using offset pagination</summary>
 <p>
 
 > 📍 The Prisma documentation on offset pagination can be found [here](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/pagination#offset-pagination).
@@ -153,9 +149,7 @@ query {
 </details>
 
 <details>
-<summary>
-Sort the links query
-</summary>
+<summary>Sort the links query</summary>
 <p>
 
 > 📍 Links can be sorted by `description`, `url` or `createdAt`.
@@ -188,9 +182,7 @@ query {
 </details>
 
 <details>
-<summary>
-Register a new user
-</summary>
+<summary>Register a new user</summary>
 <p>
 
 ```graphql
@@ -205,9 +197,7 @@ mutation {
 </details>
 
 <details>
-<summary>
-Log in an existing user
-</summary>
+<summary>Log in an existing user</summary>
 <p>
 
 ```graphql
@@ -222,9 +212,7 @@ mutation {
 </details>
 
 <details>
-<summary>
-Post a link
-</summary>
+<summary>Post a link</summary>
 <p>
 
 > 📍 You need to be logged in for this query to work. One way to do this is
@@ -253,9 +241,7 @@ mutation {
 </details>
 
 <details>
-<summary>
-Vote for a link
-</summary>
+<summary>Vote for a link</summary>
 <p>
 
 > 📍 You need to be logged in for this query to work. One way to do this is
@@ -283,9 +269,7 @@ mutation {
 </details>
 
 <details>
-<summary>
-Subscribe to new links
-</summary>
+<summary>Subscribe to new links</summary>
 <p>
 
 > 📍 Open two GraphQL Playground tabs, run the subscription in one tab, post a
@@ -310,9 +294,7 @@ subscription {
 </details>
 
 <details>
-<summary>
-Subscribe to new votes
-</summary>
+<summary>Subscribe to new votes</summary>
 <p>
 
 > 📍 Open two GraphQL Playground tabs, run the subscription in one tab, post a
