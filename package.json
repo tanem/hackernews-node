@@ -23,13 +23,13 @@
     "test:watch": "npm t -- --watchAll"
   },
   "dependencies": {
-    "@prisma/client": "2.6.2",
+    "@prisma/client": "2.7.1",
     "bcryptjs": "2.4.3",
     "graphql-yoga": "1.18.3",
     "jsonwebtoken": "8.5.1"
   },
   "devDependencies": {
-    "@prisma/cli": "2.6.2",
+    "@prisma/cli": "2.7.1",
     "@types/bcryptjs": "2.4.2",
     "@types/chance": "1.1.0",
     "@types/jest": "26.0.14",
