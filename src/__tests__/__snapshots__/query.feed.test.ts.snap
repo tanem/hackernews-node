@@ -19,9 +19,9 @@ Object {
       "links": Array [
         Object {
           "description": "Fef no gocinfan fe gu.",
-          "id": "2",
+          "id": 2,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://dum.dj/tofej",
@@ -29,9 +29,9 @@ Object {
         },
         Object {
           "description": "Jutezuj ce ova wozo tim.",
-          "id": "3",
+          "id": 3,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://ife.fr/rogeuco",
@@ -39,9 +39,9 @@ Object {
         },
         Object {
           "description": "Sa uvian ed laurapu re.",
-          "id": "4",
+          "id": 4,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://zobekdiv.sg/soki",
@@ -61,9 +61,9 @@ Object {
       "links": Array [
         Object {
           "description": "Fano ki wetu lehmuh razi.",
-          "id": "1",
+          "id": 1,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://bizbah.yt/mag",
@@ -71,9 +71,9 @@ Object {
         },
         Object {
           "description": "Fef no gocinfan fe gu.",
-          "id": "2",
+          "id": 2,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://dum.dj/tofej",
@@ -81,9 +81,9 @@ Object {
         },
         Object {
           "description": "Jutezuj ce ova wozo tim.",
-          "id": "3",
+          "id": 3,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://ife.fr/rogeuco",
@@ -91,9 +91,9 @@ Object {
         },
         Object {
           "description": "Sa uvian ed laurapu re.",
-          "id": "4",
+          "id": 4,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://zobekdiv.sg/soki",
@@ -101,9 +101,9 @@ Object {
         },
         Object {
           "description": "Useri rorur piz ruefuaj hebak.",
-          "id": "5",
+          "id": 5,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://hasme.mm/bubtocfab",
@@ -123,45 +123,45 @@ Object {
       "links": Array [
         Object {
           "description": "Fano ki wetu lehmuh razi.",
-          "id": "1",
+          "id": 1,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://bizbah.yt/mag",
         },
         Object {
           "description": "Fef no gocinfan fe gu.",
-          "id": "2",
+          "id": 2,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://dum.dj/tofej",
         },
         Object {
           "description": "Jutezuj ce ova wozo tim.",
-          "id": "3",
+          "id": 3,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://ife.fr/rogeuco",
         },
         Object {
           "description": "Sa uvian ed laurapu re.",
-          "id": "4",
+          "id": 4,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://zobekdiv.sg/soki",
         },
         Object {
           "description": "Useri rorur piz ruefuaj hebak.",
-          "id": "5",
+          "id": 5,
           "postedBy": Object {
-            "id": "1",
+            "id": 1,
             "name": "Johnny",
           },
           "url": "http://hasme.mm/bubtocfab",

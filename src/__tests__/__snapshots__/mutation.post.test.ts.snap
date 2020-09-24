@@ -25,9 +25,9 @@ Object {
   "data": Object {
     "post": Object {
       "description": "Cermamu tidrucnil nulus javwojzov dukkahkor.",
-      "id": "1",
+      "id": 1,
       "postedBy": Object {
-        "id": "1",
+        "id": 1,
         "name": "Josephine",
       },
       "url": "http://iloemfa.de/magila",
