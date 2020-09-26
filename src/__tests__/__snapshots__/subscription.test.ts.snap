@@ -4,9 +4,9 @@ exports[`new link 1`] = `
 Object {
   "newLink": Object {
     "description": "Pevva haekaop lo be mi.",
-    "id": "2",
+    "id": 2,
     "postedBy": Object {
-      "id": "1",
+      "id": 1,
       "name": "Leo",
     },
     "url": "http://zukame.az/folpodni",
@@ -17,7 +17,7 @@ Object {
 exports[`new vote 1`] = `
 Object {
   "newVote": Object {
-    "id": "1",
+    "id": 1,
     "link": Object {
       "description": "Og ah nesriaco ge aziaw.",
       "url": "http://fopone.ai/pibene",

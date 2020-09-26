@@ -6,7 +6,7 @@ Object {
     "signup": Object {
       "token": Any<String>,
       "user": Object {
-        "id": Any<String>,
+        "id": Any<Number>,
       },
     },
   },

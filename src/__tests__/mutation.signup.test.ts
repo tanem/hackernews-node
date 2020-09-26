@@ -40,7 +40,7 @@ test('signup', async () => {
       signup: {
         token: expect.any(String),
         user: {
-          id: expect.any(String),
+          id: expect.any(Number),
         },
       },
     },

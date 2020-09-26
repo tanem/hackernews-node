@@ -26,15 +26,15 @@ exports[`new vote 1`] = `
 Object {
   "data": Object {
     "vote": Object {
-      "id": "1",
+      "id": 1,
       "link": Object {
         "description": "Nem nokibof bar jilhe puwa.",
-        "id": "1",
+        "id": 1,
         "url": "http://gobhaptem.mq/ki",
       },
       "user": Object {
         "email": "juhiza@sapeag.zw",
-        "id": "1",
+        "id": 1,
         "name": "Dollie",
       },
     },
