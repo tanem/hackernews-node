@@ -16,7 +16,11 @@
 
 ## Background
 
-This project was created so I could become more familiar with [GraphQL](https://graphql.org/). It's based off [the code](https://github.com/howtographql/graphql-js) for [How to GraphQL](https://www.howtographql.com/)'s [GraphQL.js tutorial](https://www.howtographql.com/graphql-js/0-introduction/).
+This project was created so I could become more familiar with [GraphQL](https://graphql.org/). It was originally based off [the code](https://github.com/howtographql/graphql-js) for [How to GraphQL](https://www.howtographql.com/)'s [GraphQL.js tutorial](https://www.howtographql.com/graphql-js/0-introduction/), and evolved as follows:
+
+- Integration tests added to facilitate refactoring.
+- Conversion to TypeScript.
+- Switched to constructing the GraphQL schema with [Nexus Schema](https://github.com/graphql-nexus/schema).
 
 ## Getting Started
 

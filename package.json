@@ -1,7 +1,7 @@
 {
   "name": "hackernews-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "A GraphQL API for a Hacker News clone.",
   "license": "MIT",
   "repository": "github:tanem/hackernews-node",
   "author": "Tane Morgan (https://github.com/tanem)",
