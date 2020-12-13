@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/bcryptjs": "2.4.2",
     "@types/chance": "1.1.0",
-    "@types/jest": "26.0.16",
+    "@types/jest": "26.0.19",
     "@types/jsonwebtoken": "8.5.0",
     "@types/lodash": "4.14.165",
     "@types/node": "14.14.10",
