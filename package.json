@@ -38,7 +38,7 @@
     "@types/chance": "1.1.1",
     "@types/jest": "26.0.19",
     "@types/jsonwebtoken": "8.5.0",
-    "@types/lodash": "4.14.166",
+    "@types/lodash": "4.14.167",
     "@types/node": "14.14.16",
     "@types/supertest": "2.0.10",
     "@types/ws": "7.4.0",
