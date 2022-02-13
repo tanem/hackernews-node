@@ -39,7 +39,7 @@
     "@types/jest": "27.4.0",
     "@types/jsonwebtoken": "8.5.8",
     "@types/lodash": "4.14.178",
-    "@types/node": "14.18.10",
+    "@types/node": "14.18.11",
     "@types/supertest": "2.0.11",
     "@types/ws": "8.2.2",
     "chance": "1.1.8",
