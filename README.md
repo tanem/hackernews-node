@@ -1,5 +1,7 @@
 # hackernews-node
 
+> **Unmaintained.** This project is no longer maintained and the repository is archived.
+
 [![build status](https://img.shields.io/github/workflow/status/tanem/hackernews-node/CI?style=flat-square)](https://github.com/tanem/hackernews-node/actions?query=workflow%3ACI)
 [![coverage status](https://img.shields.io/codecov/c/github/tanem/hackernews-node.svg?style=flat-square)](https://codecov.io/gh/tanem/hackernews-node)
 
